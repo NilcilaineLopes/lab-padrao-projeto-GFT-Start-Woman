@@ -1,17 +1,15 @@
 package com.dio.gftStartWoman.subsistema2.cep;
 
-import com.dio.gftStartWoman.singleton.SingletonEager;
+public class CepApi {
 
-public class cepApi {
+    private static CepApi instacia = new CepApi();
 
-    private static cepApi instacia = new cepApi();
-
-    private cepApi() {
+    private CepApi() {
 
         super();
     }
 
-    public static cepApi getInstacia() {
+    public static CepApi getInstacia() {
         return instacia;
     }
 
